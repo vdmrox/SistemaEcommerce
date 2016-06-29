@@ -33,29 +33,29 @@ public class Cliente implements Serializable {
 	private Integer codigo;
 	
 	@Size(min=10,message="Nome do cliente precisa ter pelo menos 10 caracteres")
-	@NotNull(message="O campo nome È obrigatÛrio")
+	@NotNull(message="O campo nome √© obrigat√≥rio")
 	@Column(name="NM_CLIENTE")
 	private String nome;
 	
-	@NotNull(message="O campo cargo È obrigatÛrio")
+	@NotNull(message="O campo cargo √© obrigat√≥rio")
 	@Column(name="DS_CARGO")
 	private String cargo;
 	
-	@Size(min=10,message="EndereÁo precisa ter pelo menos 10 caracteres")
-	@NotNull(message="O campo endereÁo È obrigatÛrio")
+	@Size(min=10,message="Endere√ßo precisa ter pelo menos 10 caracteres")
+	@NotNull(message="O campo endere√ßo √© obrigat√≥rio")
 	@Column(name="DS_ENDERECO")
 	private String endereco;
 	
-	@NotNull(message="O campo cidade È obrigatÛrio")	
+	@NotNull(message="O campo cidade √© obrigat√≥rio")	
 	@Column(name="DS_CIDADE")
 	private String cidade;
 	
-	@NotNull(message="O campo cep È obrigatÛrio")
-	@Pattern(regexp="\\d{5}-\\d{3}",message="Campo CEP precisa estar no padr„o 00000-000")
+	@NotNull(message="O campo cep √© obrigat√≥rio")
+	@Pattern(regexp="\\d{5}-\\d{3}",message="Campo CEP precisa estar no padr√£o 00000-000")
 	@Column(name="DS_CEP")
 	private String cep;
 
-	@NotNull(message="O campo paÌs È obrigatÛrio")
+	@NotNull(message="O campo pa√≠s √≥ obrigat√≥rio")
 	@Column(name="DS_PAIS")
 	private String pais;
 	
